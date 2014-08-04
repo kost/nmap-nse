@@ -1,0 +1,15 @@
+Index: nmap-service-probes
+===================================================================
+--- nmap-service-probes	(revision 33015)
++++ nmap-service-probes	(working copy)
+@@ -12386,3 +12386,10 @@
+ rarity 7
+ ports 5008
+ match NetMotionMobility m|^\0\x40\x51\0\0\0\0| d/NetMotion Mobility VPN/
++
++##############################NEXT PROBE##############################
++Probe UDP Lantronix77FEh q|\0\0\0\xF4|
++rarity 9
++ports 30718
++
++match Lantronix77FEh m|^\0\0\0\xF5| d/Lantronix 77FEh/
